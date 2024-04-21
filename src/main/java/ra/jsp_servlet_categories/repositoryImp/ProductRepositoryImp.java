@@ -95,7 +95,7 @@ public class ProductRepositoryImp implements Repository<Product, String> {
             callSt.registerOutParameter(7, Types.INTEGER);
             callSt.execute();
             check = callSt.getInt(7);
-            if (check == 1 || check == 0) {
+            if (check == 0) {
                 result = true;
             }
         } catch (SQLException e) {

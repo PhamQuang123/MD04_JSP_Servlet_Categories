@@ -56,7 +56,7 @@ public class CategoriesRepositoryImp implements Repository<Categories, Integer> 
             callSt.registerOutParameter(4, Types.INTEGER);
             callSt.execute();
             check = callSt.getInt(4);
-            if (check == 1 || check == 0){
+            if (check == 0){
                 result = true;
             }
         } catch (SQLException e) {
@@ -86,7 +86,7 @@ public class CategoriesRepositoryImp implements Repository<Categories, Integer> 
             callSt.execute();
             check = callSt.getInt(5);
             System.out.println(check);
-            if (check == 0 ){
+            if (check == 0){
                 result = true;
             }
 
